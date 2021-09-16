@@ -1,0 +1,36 @@
+{
+  "name": "apiauthentication",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "server-dev": "NODE_ENV=prod nodemon server/app.js",
+    "client-dev": "npm start --prefix client",
+    "start-dev": "concurrently \"npm run server-dev\" \"npm run client-dev\""
+  },
+  "author": "huong",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.3",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.2.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-graphql": "^0.12.0",
+    "express-promise-router": "^4.1.0",
+    "express-validation": "^3.0.8",
+    "graphql": "^15.5.1",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.7",
+    "mongose": "0.0.2-security",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.12",
+    "passport": "^0.4.1",
+    "passport-facebook-token": "^4.0.0",
+    "passport-google-plus-token": "^2.1.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0"
+  }
+}
